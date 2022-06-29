@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+           
+            <td>Student Id: <h:inputText value="#{student.sid}"> </h:inputText> </td> <br/>
+            <td>Student Name: <h:inputText value="#{student.sname}"> </h:inputText> </td> <br/>
+            <td>Student Email: <h:inputText value="#{student.semail}"> </h:inputText> </td> <br/>
+            <td>Student Password: <h:inputText value="#{student.password}"> </h:inputText> </td> <br/>
+            
+            
+             <td> <h:commandButton value="Insert"   actionListener="#{student.doInsert()}" action="show.xhtml"></h:commandButton></td>    
+             <td> <h:commandButton value="Update" actionListener="#{student.doUpdate()}" action="show.xhtml"></h:commandButton></td>    
+             <td> <h:commandButton value="Delete" actionListener="#{student.dodelete()}" action="show.xhtml"></h:commandButton></td>  
+             <td> <h:commandButton value="ShowAll" actionListener="#{student.doShowAll()}" action="show.xhtml"></h:commandButton></td>
+             <td> <h:commandButton value="ShowById" actionListener="#{student.doShowById()}" action="show.xhtml"></h:commandButton></td> 
+        </h:form>
+       
+    </h:body>
+</html>
+
